@@ -1,0 +1,13 @@
+## print file full path under floder
+import os
+
+def doInDir(somedir):
+    fileList = os.listdir(somedir)
+    for f in fileList:
+        fullpath = os.path.join(somedir, f)
+        if os.path.isdir(fullpath):
+            doInDir(fullpath)
+        elif os.path.isfile(fullpath):
+            print (fullpath)
+
+doInDir("/home/apteam/Desktop/MySQLTestFiles/")
