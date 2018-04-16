@@ -10,25 +10,6 @@
 #     print("ERROR")
 ## create new table
 
-
-## inser new into table
-# for i in range(0,10,1):
-#     sql = "INSERT INTO books VALUE(\"book"
-#     sql += str(i)
-#     sql +="\","
-#     sql += str(i*10)
-#     sql += ",\"yoyo\",\"Mary\");"
-#
-#     try:
-#         # 执行sql语句
-#         cursor.execute(sql)
-#         # 执行sql语句
-#         db.commit()
-#     except:
-#         # 发生错误时回滚
-#         db.rollback()
-## inser new into table
-
 ## delete new into table
 # for i in range(0,10,1):
 #     sql = "DELETE FROM books WHERE title=\"book"
@@ -47,20 +28,21 @@
 
 
 ## fetch select
-# sql = "SELECT * FROM books;"
-#
+# sql = "SELECT * FROM files;"
 # try:
 #     # 执行sql语句
 #     cursor.execute(sql)
 #     results = cursor.fetchall()
 #     for row in results:
-#         title = row[0]
-#         price = row[1]
-#         language = row[2]
-#         author = row[3]
-#         print("title=%s,price=%d,language=%s,author=%s" % (title,price,language,author))
+#         name = row[0]
+#         mtime = row[1]
+#         size = row[2]
+#         type = row[3]
+#         print("name=%s,mtime=%s,size=%s,type=%s" % (name,mtime,size,type))
+#     db.commit()
 # except:
 #     print("ERROR")
+#     db.rollback()
 ## fetch select
 
 
