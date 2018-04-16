@@ -1,3 +1,69 @@
+
+## create new table
+# sql = "CREATE TABLE files(name VARCHAR(50) NOT NULL,extension VARCHAR(50) NOT NULL,size VARCHAR(50) NOT NULL,type VARCHAR(50) DEFAULT \"OTHER\");"
+#
+# try:
+#     # 执行sql语句
+#     cursor.execute(sql)
+#     db.commit()
+# except:
+#     print("ERROR")
+## create new table
+
+
+## inser new into table
+# for i in range(0,10,1):
+#     sql = "INSERT INTO books VALUE(\"book"
+#     sql += str(i)
+#     sql +="\","
+#     sql += str(i*10)
+#     sql += ",\"yoyo\",\"Mary\");"
+#
+#     try:
+#         # 执行sql语句
+#         cursor.execute(sql)
+#         # 执行sql语句
+#         db.commit()
+#     except:
+#         # 发生错误时回滚
+#         db.rollback()
+## inser new into table
+
+## delete new into table
+# for i in range(0,10,1):
+#     sql = "DELETE FROM books WHERE title=\"book"
+#     sql += str(i)
+#     sql +="\";"
+#
+#     try:
+#         # 执行sql语句
+#         cursor.execute(sql)
+#         # 执行sql语句
+#         db.commit()
+#     except:
+#         # 发生错误时回滚
+#         db.rollback()
+## delete new into table
+
+
+## fetch select
+# sql = "SELECT * FROM books;"
+#
+# try:
+#     # 执行sql语句
+#     cursor.execute(sql)
+#     results = cursor.fetchall()
+#     for row in results:
+#         title = row[0]
+#         price = row[1]
+#         language = row[2]
+#         author = row[3]
+#         print("title=%s,price=%d,language=%s,author=%s" % (title,price,language,author))
+# except:
+#     print("ERROR")
+## fetch select
+
+
 ## print file full path under floder
 import os
 
